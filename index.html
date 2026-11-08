@@ -147,6 +147,12 @@ p,.lead,.cap,.tl p,.three p,.qnote{text-wrap:pretty}
   mask-image:linear-gradient(to top,rgba(0,0,0,.95) 35%,rgba(0,0,0,0) 100%)}
 .crowd-bg img{position:absolute;left:0;bottom:0;width:100%;height:auto;opacity:.30}
 .page#pmap>*:not(.crowd-bg){position:relative;z-index:1}
+.page#p7{position:relative;overflow:hidden}
+.page#p7::before{content:"";position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(55% 38% at 92% 8%,rgba(179,43,33,.09),transparent 62%),
+             radial-gradient(50% 40% at 4% 94%,rgba(140,26,19,.07),transparent 60%)}
+.page#p7::after{content:"共有";position:absolute;right:7%;bottom:6%;font-family:var(--serif);font-size:70px;line-height:1.25;letter-spacing:.18em;color:rgba(140,26,19,.05);writing-mode:vertical-rl;pointer-events:none}
+.page#p7>*:not(.crowd-bg){position:relative;z-index:1}
 .page#p7{background:linear-gradient(165deg,#fbf2e0 0%,#f0dfc2 58%,#e7d2ac 100%);color:var(--tx-paper)}
 .page#p7 .kicker{color:var(--red-2);opacity:.78}
 .page#p7 .three .glyph{color:var(--red);border-bottom-color:rgba(140,26,19,.28)}
@@ -361,7 +367,7 @@ cite{display:block;font-style:normal;font-size:10.5px;color:var(--muted-dark);ma
   
 
   <p class="kicker rise">02 · 一条路</p>
-  <h2 class="rise h2-one">它到来了，它融合了，它吉祥了。</h2>
+  <h2 class="rise">它被接纳，被祝福。</h2>
 
     <figure class="rise map-plate-wrap">
     <img loading="lazy" decoding="async" class="map-plate" src="img/03.jpg" alt="丝绸之路东段：葱岭经敦煌至长安">
@@ -393,7 +399,7 @@ cite{display:block;font-style:normal;font-size:10.5px;color:var(--muted-dark);ma
     <figcaption class="cap cut-note">皮、膜、籽：一层包住，一层分开，一层独立</figcaption>
   </figure>
 
-  <p class="lead rise cut-note" style="margin-top:10px;font-size:13.5px">皮包住所有籽，膜把籽分成小格；<br>每一粒都独立，却共享同一份汁水。</p>
+  <p class="lead rise cut-note" style="margin-top:10px;font-size:13.5px">石榴皮包住所有的籽，石榴膜把籽分成小格。<br>每一粒都独立，又都血脉相连。</p>
 
   <div class="seedrow rise cut-note" id="seeds"></div>
   <p class="seedline rise cut-note" id="seedline">点一颗籽，看它说什么</p>
@@ -432,7 +438,7 @@ cite{display:block;font-style:normal;font-size:10.5px;color:var(--muted-dark);ma
 
 <!-- ================= 6 院子 ================= -->
 <section class="page paper" id="pmap">
-  <div class="crowd-bg" aria-hidden="true"><img loading="lazy" decoding="async" src="img/07.jpg" alt=""></div>
+  <div class="crowd-bg" aria-hidden="true"><img loading="lazy" decoding="async" src="img/07.png" alt=""></div>
   <p class="kicker rise">06 · 六个自治县</p>
   <h2 class="rise">一张河北地图上的六个点</h2>
 
